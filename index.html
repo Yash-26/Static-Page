@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Form Submit</title>
+
+<!--CSS-->
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body onload="msg()">
+
+<!--NavBar-->
+
+<div>
+ <ul>
+  <li>
+   <a class="nav-link">Home</a>
+  </li>
+  <li>
+   <a class="nav-link">About</a>
+  </li>
+  <li>
+   <a class="nav-link">Signup</a>
+  </li>
+ </ul>
+
+<!--Platforms sections-->
+
+<h1 class="title">Streaming Platforms</h1>
+<div class="images">
+ <img src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg" onclick="yt()">
+ <img src="https://i.pcmag.com/imagery/reviews/05cItXL96l4LE9n02WfDR0h-5.fit_scale.size_760x427.v1582751026.png" onclick="netflix()">
+ <img src="https://secure-media.hotstar.com/web-assets/prod/images/Disney+Hotstar.jpg" onclick="hotstar()">
+ <img src="https://m.media-amazon.com/images/G/01/primevideo/seo/primevideo-seo-logo.png" onclick="prime()">
+</div>
+
+
+
+<!--Contact-->
+<h1>SignUp</h1>
+<form action="success.html" target="blank">
+
+<select>
+  <option>--Select Interest--</option>
+  <optgroup label="Books">
+   <option>Ikigai</option>
+   <option>The Mountain is You</option>
+   <option>Can't Hurt Me</option>
+  <optgroup label="Games">
+   <option>Inversion</option>
+   <option>Genshin</option>
+   <option>TOF</option>
+</select><br><br>
+
+<label>FirstName&nbsp;&nbsp;&nbsp;</label>
+<input type="text" placeholder="FirstName" class="input-field" required><br><br>
+
+<label>LastName&nbsp;&nbsp;&nbsp;</label>
+<input type="text" placeholder="LastName" class="input-field" ><br><br>
+
+
+<label>Birthday</label>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="datetime-local" placeholder="DOB" required class="input-field" ><br><br>
+
+<label>EmailAdd</label>&nbsp;&nbsp;&nbsp;
+<input type="Email" placeholder="Email" required class="input-field" ><br><br>
+
+<label>Password</label>&nbsp;&nbsp;&nbsp;
+<input type="Password" placeholder="Password" required class="input-field" ><br><br>
+
+<label>Confirm</label>&nbsp;&nbsp;
+<input type="Password" placeholder="Confirm Password" required class="input-field" ><br><br>
+<input type="checkbox" required>
+<label>I Agree to the <span>terms and conditions.</span></label><br><br>
+<button type="Submit">Register</button>
+
+</form>
+
+<script src="index.js"></script>
+
+</body>
+
+
+</html>
